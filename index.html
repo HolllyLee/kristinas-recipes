@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kristina's Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <span class="float f1" aria-hidden="true">🍓</span>
+    <span class="float f2" aria-hidden="true">🍰</span>
+    <span class="float f3" aria-hidden="true">🌸</span>
+    <span class="float f4" aria-hidden="true">🍒</span>
+    <span class="float f5" aria-hidden="true">🥞</span>
+
+    <div class="lang-switch">
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="ru">RU</button>
+      <button data-lang="uk">UA</button>
+    </div>
+
+    <h1>Kristina's Recipes</h1>
+    <p id="subtitle"></p>
+  </header>
+
+  <main>
+        <div class="toolbar">
+      <input id="search" type="text">
+      <button id="random-btn" class="share-btn"></button>
+    </div>
+    <div id="filters" class="filters"></div>
+    <div class="recipes" id="recipes"></div>
+
+    <section class="fridge-section">
+      <h2 id="fridge-title" class="section-title"></h2>
+      <div id="fridge" class="fridge">
+        <div class="fridge-line"></div>
+        <div class="handle top"></div>
+        <div class="handle bottom"></div>
+        <div id="magnets" class="magnets"></div>
+      </div>
+      <p id="fridge-hint"></p>
+    </section>
+  </main>
+
+  <footer>Made with 💕 by Kristina</footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <button id="close" class="close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <div id="fridge-modal" class="modal">
+    <div class="modal-box">
+      <button id="fridge-close" class="close">✕</button>
+      <div id="fridge-content"></div>
+    </div>
+  </div>
+
+  <div id="timer" class="timer">
+    <div id="timer-title"></div>
+    <div id="timer-time">00:00</div>
+    <button id="timer-stop"></button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="fridge.js"></script>
+<script src="substitutes.js"></script>
+  <script src="cook.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="db.js"></script>
+</body>
+</html>
