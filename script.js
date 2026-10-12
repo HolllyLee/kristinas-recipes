@@ -236,6 +236,7 @@ document.querySelectorAll(".lang-switch button").forEach(function (b) {
 // ===== 6. ПОИСК И ФИЛЬТРЫ =====
 function recipeMatches(id) {
   const r = recipes[id];
+    if (r.web) return false;
   const q = searchQuery.trim().toLowerCase();
 
   if (q) {

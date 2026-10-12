@@ -6,17 +6,25 @@
   <title>Kristina's Recipes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Caveat:wght@500;700&family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="hero">
-    <span class="float f1" aria-hidden="true">🍓</span>
-    <span class="float f2" aria-hidden="true">🍰</span>
-    <span class="float f3" aria-hidden="true">🌸</span>
+    <span class="star s1" aria-hidden="true">✦</span>
+    <span class="star s2" aria-hidden="true">✦</span>
+    <span class="star s3" aria-hidden="true">✧</span>
+    <span class="star s4" aria-hidden="true">✦</span>
+    <span class="star s5" aria-hidden="true">✧</span>
+    <span class="star s6" aria-hidden="true">✦</span>
+
+    <span class="float f1" aria-hidden="true">🦋</span>
+    <span class="float f2" aria-hidden="true">🍓</span>
+    <span class="float f3" aria-hidden="true">💖</span>
     <span class="float f4" aria-hidden="true">🍒</span>
-    <span class="float f5" aria-hidden="true">🥞</span>
+    <span class="float f5" aria-hidden="true">🎀</span>
+    <span class="float f6" aria-hidden="true">🦋</span>
 
     <div class="lang-switch">
       <button data-lang="en">EN</button>
@@ -30,26 +38,36 @@
   </header>
 
   <main>
-        <div class="toolbar">
+    <div class="toolbar">
       <input id="search" type="text">
       <button id="random-btn" class="share-btn"></button>
     </div>
     <div id="filters" class="filters"></div>
     <div class="recipes" id="recipes"></div>
+        <section id="world" class="world-section"></section>
 
     <section class="fridge-section">
       <h2 id="fridge-title" class="section-title"></h2>
-      <div id="fridge" class="fridge">
-        <div class="fridge-line"></div>
-        <div class="handle top"></div>
-        <div class="handle bottom"></div>
-        <div id="magnets" class="magnets"></div>
+            <div id="fridge" class="fridge">
+        <div id="fridge-inside" class="fridge-inside"></div>
+        <div class="fridge-door">
+          <div class="fridge-line"></div>
+          <div class="handle top"></div>
+          <div class="handle bottom"></div>
+          <div id="magnets" class="magnets"></div>
+        </div>
       </div>
       <p id="fridge-hint"></p>
     </section>
+        <section id="diary" class="diary-section"></section>
+            <section id="planner" class="planner-section"></section>
+            <section id="arcade" class="arcade-section"></section>
+       <section id="diary" class="diary-section"></section>
+    <section id="planner" class="planner-section"></section>
+    <section id="arcade" class="arcade-section"></section>
+  </main>         
   </main>
-
-  <footer>Made with 💕 by Kristina</footer>
+  <footer>★ made with love by Kristina ★</footer>
 
   <div id="modal" class="modal">
     <div class="modal-box">
@@ -73,9 +91,22 @@
 
   <script src="script.js"></script>
   <script src="fridge.js"></script>
-<script src="substitutes.js"></script>
+  <script src="substitutes.js"></script>
   <script src="cook.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="db.js"></script>
-</body>
+  <script src="sparkles.js"></script>
+    <script src="fridge-door.js"></script>
+      <script src="magnets.js"></script>
+  <script src="diary.js"></script>
+  <script src="games.js"></script>
+    <script src="planner.js"></script>
+    <script src="world.js"></script>
+      <script src="more-recipes.js"></script>
+  <script src="voice.js"></script>
+    <script src="translate.js"></script>
+      <script src="night.js"></script>
+  <script src="slides.js"></script>
+    <script src="nutrition.js"></script>
+</body>  
 </html>
